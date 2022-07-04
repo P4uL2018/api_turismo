@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.turismo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Turismo">
+
+        <activity
+            android:name=".views.login"
+            android:exported="true"
+            android:label="Inicie sesión">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="true"
+            android:label="Lugares turísticos"/>
+
+        <activity
+            android:name=".views.Myreserves"
+            android:exported="true"
+            android:label="Mis reservas"/>
+        <activity
+            android:name=".views.RegisterReservas"
+            android:exported="true"
+            android:label="Reservar"/>
+        <activity
+            android:name=".views.profile"
+            android:exported="true"
+            android:label="Perfil de usuario"/>
+        <activity
+            android:name=".views.signup"
+            android:exported="true"
+            android:label="Regístrese"/>
+    </application>
+
+</manifest>
